@@ -2,11 +2,11 @@ manifest:
   defaults:
     revision: v0.2
 
-remotes:
-  - name: zmkfirmware
-    url-base: https://github.com/zmkfirmware
-  - name: hnbn
-    url-base: https://github.com/HNBN9
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: hnbn
+      url-base: https://github.com/HNBN9
 
   projects:
     - name: zmk
@@ -15,8 +15,8 @@ remotes:
 
     - name: zmkconf
       remote: hnbn
-      revision: master
-      path: zmkconf
+      revision: main  # ← 실제 브랜치 이름
+      path: config    # ← 이게 config 디렉토리에 들어감
 
   self:
     path: config
