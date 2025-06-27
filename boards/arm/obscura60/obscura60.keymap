@@ -21,7 +21,7 @@
 //   |  CTL  |  WIN  |  ALT  |      Fn1        |      SPACE      |  LT |  DN |  RT |  CTL  |    
 // -------------------------------------------------------------------------------------------
             bindings = <
-    &gresc  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL &kp BSLH &kp DEL
+    &kp ESC  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL &kp BSLH &kp DEL
     &kp TAB     &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LBKT  &kp RBKT      &kp BSPC
     &lt 2 RALT    &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp SQT            &kp ENTER
     &kp LSHFT   &kp SLASH  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp UP  &kp RSHFT  &mo 1
@@ -31,35 +31,35 @@
 
         mod1_layer {
 // -------------------------------------------------------------------------------------------
-// | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |  \  | DEL |
-// | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   BSPC   |
-// |  Fn2  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER     |
-// | SHIFT |  /  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  UP |  SHIFT  | Fn1 |
-//   |  CTL  |  WIN  |  ALT  |      Fn1        |      SPACE      |  LT |  DN |  RT |  CTL  |    
+// | ` | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F8  | F9  | F10 |     |     |     |     |
+// |       |PG_UP|  UP |PG_DN|     |     |     |     |     |     |     |     |     |          |
+// |       |  LT |  DN |  RT |     |     |     |     |     |     |     |     |               |
+// |       |     |     |     |     |     |     |     |     |     |     |     |         |     |
+//   |       |       |       |                 |                 |     |     |     |       |    
 // -------------------------------------------------------------------------------------------
             bindings = <
-    &gresc  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL &kp BSLH &kp DEL
-    &kp TAB     &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LBKT  &kp RBKT      &kp BSPC
-    &lt 2 RALT    &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp SQT            &kp ENTER
-    &kp LSHFT   &kp SLASH  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp UP  &kp RSHFT  &mo 1
-    &kp LCTRL &kp LGUI &kp LALT          &mo 1            &kp SPACE            &kp LEFT  &kp DOWN  &kp RIGHT &kp RCTRL
+    &kp GRAVE  &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &trans &trans &trans &trans
+    &trans     &kp PG_UP  &kp UP  &kp PG_DN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+    &trans     &kp LEFT &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+    &trans    &trans   &trans            &trans              &trans              &trans    &trans    &trans   &trans  
             >;
         };
 
         mod2_layer {
 // -------------------------------------------------------------------------------------------
-// | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |  \  | DEL |
-// | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   BSPC   |
-// |  Fn2  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER     |
-// | SHIFT |  /  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  UP |  SHIFT  | Fn1 |
-//   |  CTL  |  WIN  |  ALT  |      Fn1        |      SPACE      |  LT |  DN |  RT |  CTL  |    
+// | RST |     |     |     |     |     |     |  7  |  8  |  9  |      |     |     |     |  BOOT  |
+// |      |     |     |     |     |     |     |  4  |  5  |  6  |     |     |     |          |
+// |       |     |     |     |     |     |     |  1  |  2  |  3  |     |     |               |
+// |       |     |     |     |     |     |     |  0  |     |     |     |     |         |     |
+//   |       |       |       |                 |                 |     |     |     |       |    
 // -------------------------------------------------------------------------------------------
             bindings = <
-    &gresc  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL &kp BSLH &kp DEL
-    &kp TAB     &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LBKT  &kp RBKT      &kp BSPC
-    &lt 2 RALT    &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp SQT            &kp ENTER
-    &kp LSHFT   &kp SLASH  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp UP  &kp RSHFT  &mo 1
-    &kp LCTRL &kp LGUI &kp LALT          &mo 1            &kp SPACE            &kp LEFT  &kp DOWN  &kp RIGHT &kp RCTRL
+    &sys_reset  &trans  &trans  &trans  &trans  &trans  &trans  &kp N7 &kp N8 &kp N9  &trans   &trans &trans &trans &bootloader
+    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &kp N4 &kp N5 &kp N6  &trans  &trans  &trans   &trans
+    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &kp N1 &kp N2 &kp N3       &trans  &trans  &trans  
+    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &kp N0  &trans  &trans  &trans  &trans  &trans  &trans  
+    &trans    &trans   &trans            &trans              &trans              &trans    &trans    &trans   &trans 
             >;
         };
     };
