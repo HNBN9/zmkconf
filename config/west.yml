@@ -15,8 +15,8 @@ manifest:
 
     - name: zmkconf
       remote: hnbn
-      revision: main  # ← 실제 브랜치 이름
-      path: config    # ← 이게 config 디렉토리에 들어감
+      revision: main  
+      path: config    
 
   self:
     path: config
