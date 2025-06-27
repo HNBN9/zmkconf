@@ -78,7 +78,6 @@
 &gpio0 {
     boot_pin: boot_pin {
         gpios = <19 GPIO_ACTIVE_LOW>;  
-        label = "BOOT_PIN";
         gpio-hog;                    
         input;                      
     };
