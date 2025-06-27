@@ -1,7 +1,0 @@
-/ {
-    obscura60_layout: obscura60_layout {
-        compatible = "zmk,physical-layout";
-        display-name = "Obscura60 Layout";
-        transform = <&default_transform>;
-
-        keys  //                     w   h    x    y     rot    rx    ry
