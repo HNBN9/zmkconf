@@ -1,3 +1,5 @@
+#include <physical_layouts.dtsi>
+
 / {
     obscura60_layout: obscura60_layout {
         compatible = "zmk,physical-layout";
