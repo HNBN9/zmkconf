@@ -3,5 +3,4 @@
 
 ---
 include:
-  - board: holyiot-18010-nRF52840
-    shield: obscura60
+  - board: obscura60
