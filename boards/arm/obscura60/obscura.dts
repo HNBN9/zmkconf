@@ -62,3 +62,56 @@ RC(4,1)   RC(4,2)   RC(4,3)                      RC(4,5)           RC(4,8)      
             , <&gpio1 11  GPIO_ACTIVE_HIGH>
             ;
     };
+};
+
+&adc {
+    status = "okay";
+};
+
+&gpiote {
+    status = "okay";
+};
+
+&gpio0 {
+    status = "okay";
+};
+
+&gpio1 {
+    status = "okay";
+};
+
+zephyr_udc0: &usbd {
+    status = "okay";
+};
+
+&flash0 {
+    partitions {
+        compatible = "fixed-partitions";
+        #address-cells = <1>;
+        #size-cells = <1>;
+
+        sd_partition: partition@0 {
+            label = "sd";
+            reg = <0x00000000 0x00001000>;
+        };
+
+        code_partition: partition@1000 {
+            label = "code";
+            reg = <0x00001000 0x000E8000>;
+        };
+
+        storage_partition: partition@E9000 {
+            label = "storage";
+            reg = <0x000E9000 0x00017000>;
+        };
+
+        boot_partition: partition@100000 {
+            label = "boot";
+            reg = <0x00100000 0x00001000>;
+        };
+    };
+};
+
+&obscura60_layout {
+    transform = <&default_transform>;
+};
