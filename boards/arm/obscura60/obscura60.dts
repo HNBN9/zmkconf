@@ -4,6 +4,7 @@
 
 /dts-v1/;
 #include <nordic/nrf52840_qiaa.dtsi>
+#include <obscura60_layouts.dtsi>
 
 / {
     model = "obscura60";
