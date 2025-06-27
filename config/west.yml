@@ -1,6 +1,4 @@
 manifest:
-  defaults:
-    revision: v0.2
 
   remotes:
     - name: zmkfirmware
@@ -16,7 +14,6 @@ manifest:
     - name: zmkconf
       remote: hnbn
       revision: master  
-      path: .
 
   self:
     path: config
