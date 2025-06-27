@@ -3,5 +3,5 @@
 
 ---
 include:
-  - board: obscura60_board
+  - board: holyiot-18010-nRF52840
     shield: obscura60
