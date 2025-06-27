@@ -9,11 +9,12 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
+      revision : main
       import: app/west.yml
 
     - name: zmkconf
       remote: hnbn
-      revision: master  
+      revision: master 
 
   self:
     path: config
