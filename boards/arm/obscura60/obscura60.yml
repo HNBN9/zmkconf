@@ -1,0 +1,12 @@
+identifier: obscura60
+name: Obscura60
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+supported:
+  - usb_device
+  - ble
+  - pwm
+  - watchdog
