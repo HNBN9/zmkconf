@@ -16,7 +16,7 @@ manifest:
     - name: zmkconf
       remote: hnbn
       revision: main  
-      path: config    
+      path: zmkconf    
 
   self:
     path: config
