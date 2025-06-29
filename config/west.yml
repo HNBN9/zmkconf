@@ -4,7 +4,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: hnbn
-      url-base: https://github.com/HNBN9
+      url-base: git@github.com:HNBN9
 
   projects:
     - name: zmk
