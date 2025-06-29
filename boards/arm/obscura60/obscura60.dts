@@ -75,14 +75,6 @@
     status = "okay";
 };
 
-&gpio0 {
-    boot_pin: boot_pin {
-        gpios = <19 GPIO_ACTIVE_LOW>;  
-        gpio-hog;                    
-        input;                      
-    };
-};
-
 &gpio1 {
     status = "okay";
 };
