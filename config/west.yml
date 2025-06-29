@@ -8,8 +8,8 @@ manifest:
 
   projects:
     - name: zmk
-      remote: hnbn
-      revision : with-bootkey
+      remote: zmkfirmware
+      revision : main
       import: app/west.yml
 
     - name: zmkconf
