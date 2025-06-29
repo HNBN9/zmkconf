@@ -49,14 +49,14 @@
 // | RST |  BT1 | BT2 | BT3 | BT4 | BT5 |CLEAR|  7  |  8  |  9  |  *  |  -  |  +  |     |  BOOT  |
 // |      |     |  UP |     |     |     |     |  4  |  5  |  6  |     |     |     |          |
 // |       |  LT |  DN |  RT |     |     |     |  1  |  2  |  3  |     |     |               |
-// |       |     |     |     |     |     |     |  0  |     |     |     |     |         |     |
+// |       |     |     |     |     |     |     |     |  0  |     |     |     |         |     |
 //   |       |       |       |     BSPC        |                 |     |     |     |       |    
 // -------------------------------------------------------------------------------------------
             bindings = <
     &sys_reset  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR  &kp N7 &kp N8 &kp N9  &kp KP_ASTERISK &kp KP_MINUS &kp KP_PLUS &trans &bootloader
     &trans     &trans  &kp UP  &trans  &trans  &trans  &trans  &kp N4 &kp N5 &kp N6  &trans  &trans  &trans   &trans
     &trans     &kp LEFT &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &kp N1 &kp N2 &kp N3       &trans  &trans  &trans  
-    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &kp N0  &trans  &trans  &trans  &trans  &trans  &trans  
+    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N0  &trans  &trans  &trans  &trans  &trans  
     &trans    &trans   &trans            &kp BSPC             &trans              &trans    &trans    &trans   &trans 
             >;
         };
