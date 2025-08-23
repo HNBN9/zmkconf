@@ -83,12 +83,11 @@
             , <&gpio1 11  GPIO_ACTIVE_HIGH>
             ;
     };
-};
 
-soft_off_sources: soft_off_wakeup_sources {
-    compatible = "zmk,soft-off-wakeup-sources";
-    wakeup-sources = <&gpio_wake_key>;
-};
+    soft_off_sources: soft_off_wakeup_sources {
+        compatible = "zmk,soft-off-wakeup-sources";
+        wakeup-sources = <&gpio_wake_key>;
+    };
 };
 
 &adc {
